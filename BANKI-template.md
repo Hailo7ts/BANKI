@@ -218,6 +218,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Describe BFC (Block Formatting Context) and how it works.
   - **Explanation:**
+    tool in css to manage layout stability helps direct how floats will interact in the page or using diplay: block;
   - **Use:**
   - **Example:**
   - **Source:**
@@ -396,6 +397,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What's a typical use case for anonymous functions?
   - **Explanation:**
+    like a helper/throw away function
   - **Use:**
   - **Example:**
   - **Source:**
@@ -416,6 +418,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What's the difference between `.call()` and `.apply()`?
   - **Explanation:**
+    .call passes values .apply can pass values and arrays
   - **Use:**
   - **Example:**
   - **Source:**
@@ -436,6 +439,8 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Explain Ajax in as much detail as possible.
   - **Explanation:**
+    asych js and xml sends data to client without refreshing the page
+    having a dynamic website would make it easier to share with others
   - **Use:**
   - **Example:**
   - **Source:**
@@ -616,6 +621,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] How can you share code between files?
   - **Explanation:**
+    export and import modules? modules exports
   - **Use:**
   - **Example:**
   - **Source:**
@@ -639,6 +645,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What is the difference between classical inheritance and prototypal inheritance?
   - **Explanation:**
+    Prototypal is used in js because its a prototypal language everything will inherit from the prototype like built in methods. So found in class based languages
   - **Use:**
   - **Example:**
   - **Source:**
@@ -682,6 +689,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Why is Node.js Single-threaded?
   - **Explanation:**
+
   - **Use:**
   - **Example:**
   - **Source:**
@@ -712,6 +720,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What are the functionalities of NPM in Node.js?
   - **Explanation:**
+    install packages and dependency managment
   - **Use:**
   - **Example:**
   - **Source:**
@@ -752,6 +761,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What is the difference between Asynchronous and Non-blocking?
   - **Explanation:**
+    doing multiple things at once?
   - **Use:**
   - **Example:**
   - **Source:**
@@ -815,6 +825,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What is an algorithm?
   - **Explanation:**
+    A series of steps to achieve an end goal. Usally optimized to find the best path to the answer.
   - **Use:**
   - **Example:**
   - **Source:**
@@ -880,8 +891,16 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What is a Disjoint Set?
   - **Explanation:**
+    Apart of data structure sets
   - **Use:**
+    In simplified terms, disjoint sets are like LinkedIn or Facebook mutual friends. the disjoint set is used to discover how different friend lists overlap (aka mutual friends)
   - **Example:**
+    Not disjointed
+    set1 = 1, 2, 3
+    set2 = 3, 4, 5
+    Is disjointed
+    set1 = 1, 2, 3
+    set2 = 3, 4
   - **Source:**
 - [ ] What is a Bloom Filter?
   - **Explanation:**
