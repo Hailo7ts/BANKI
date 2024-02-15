@@ -89,6 +89,17 @@ Most of the behavioral questions should be answered in the CAR format. At least 
   - **Result:**
 - [ ] Tell me about yourself.
   - **Cause:**
+  I am a person with a background in [background]
+
+I noticed [this problem]
+
+I built [this project]
+
+The resulting success metric was [metric]
+
+This has led me to [your company] where I would love to contribute to [problem company solves]
+
+
   - **Action:**
   - **Result:**
 - [ ] Tell me about your experience at 100Devs.
@@ -160,6 +171,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Consider HTML5 as an open web platform. What are the building blocks of HTML5?
   - **Explanation:**
+    gave new features and functionality we have local storage, more semantic tags which helps with accessibility
   - **Use:**
   - **Example:**
   - **Source:**
@@ -319,6 +331,11 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What's the difference between a `relative`, `fixed`, `absolute` and `static` positioned element?
   - **Explanation:**
+  (sticky)--
+  relative - can adjust off box set position but like static
+  fixed- positioned to viewport does not leave after scrolling
+  absolute - accepts offset stays in flow of doc as long as parent is relative
+  static - default of element positioning
   - **Use:**
   - **Example:**
   - **Source:**
@@ -372,6 +389,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What do you think of AMD vs CommonJS?
   - **Explanation:**
+  
   - **Use:**
   - **Example:**
   - **Source:**
@@ -476,6 +494,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Why is extending built-in JavaScript objects not a good idea?
   - **Explanation:**
+
   - **Use:**
   - **Example:**
   - **Source:**
@@ -526,6 +545,8 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Explain what a single page app is and how to make one SEO-friendly.
   - **Explanation:**
+    it dynamically loads so its not seitching to a new page its re rendering the single page?
+    using pre render is server side renderer?
   - **Use:**
   - **Example:**
   - **Source:**
@@ -640,6 +661,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What is functional programming?
   - **Explanation:**
+    Programming to keep things DRY and SRP
   - **Use:**
   - **Example:**
   - **Source:**
@@ -914,6 +936,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Demonstrate Insertion Sort and explain when you might use it?
   - **Explanation:**
+  sorting algorithm that has big o notation of'inserts a value and then sorts
   - **Use:**
   - **Example:**
   - **Source:**
