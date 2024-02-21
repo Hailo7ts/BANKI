@@ -210,7 +210,9 @@ Most of the technical questions should have a three sentence response in the EUE
 
 - [ ] What is CSS selector specificity and how does it work?
   - **Explanation:**
+  The higher a CSS selector's specificity is determines which property value to apply to the element. The selector specificity is whats used to determine the most relevant declartion to a element.
   - **Use:**
+  Used to determine what propety value is most relevant to apply to a element.
   - **Example:**
   - **Source:**
 - [ ] What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
@@ -316,9 +318,16 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What does `* { box-sizing: border-box; }` do? What are its advantages?
   - **Explanation:**
+  CSS box-sizing property allows us to include the padding and boder in an element's total width and height.
+  CSS border-box value calculates width and height of element based on content, padding, and border.
   - **Use:**
+  In CSS if using `*` selector with `box-sizing: border-box;` it will calulate width and height for all elements based on content, padding, and border.
   - **Example:**
+  *{
+    box-sizing: border-box;
+  }
   - **Source:**
+  https://www.freecodecamp.org/news/what-is-box-sizing-border-box-css/
 - [ ] What is the CSS `display` property and can you give a few examples of its use?
   - **Explanation:**
   - **Use:**
@@ -503,11 +512,27 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Use:**
   - **Example:**
   - **Source:**
+
 - [ ] What is the difference between `==` and `===`?
   - **Explanation:**
+  `==` performs type coercion before making any comparison, which automatically converts the datatype of one operand to be the same, so comparrison is possible. `===` works like `==` but does not use type coercion, it first checks if datatype matches, then checks value.
   - **Use:**
+  `==` for 'loose equality'
+  `===` for 'strict equality'
   - **Example:**
+  `==`
+  const a = 100;
+  const b = '100';
+
+  console.log(a == b) // true
+  `===`
+  const a = 100;
+  const b = '100';
+
+  console.log(a === b); // false
   - **Source:**
+  https://www.freecodecamp.org/news/loose-vs-strict-equality-in-javascript/
+
 - [ ] Explain the same-origin policy with regards to JavaScript.
   - **Explanation:**
   - **Use:**
@@ -520,9 +545,16 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Why is it called a ternary expression, what does the word "ternary" indicate?
   - **Explanation:**
+  Ternary indicates that there is a use of three. The ternary expression is called what it is because the conditional operator takes a condition, a `?` and then a `:`. 
   - **Use:**
+  If condition before quesiton mark is truthy it executes code prior to colon if falsy it executes the code after the colon.
   - **Example:**
+  function getFee(isMember) {
+  return isMember ? '$2.00' : '$10.00';
+}
   - **Source:**
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+
 - [ ] What is "use strict";? what are the advantages and disadvantages to using it?
   - **Explanation:**
   - **Use:**
@@ -837,6 +869,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What are types?
   - **Explanation:**
+
   - **Use:**
   - **Example:**
   - **Source:**
