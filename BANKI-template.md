@@ -654,13 +654,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] Can you give an example for destructuring an object or an array?
   - **Explanation:**
+
   - **Use:**
   - **Example:**
   - **Source:**
 - [ ] ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
   - **Explanation:**
+  It lets us dynamically insert variables into strings without concat
   - **Use:**
+  Makes code more resuable and clean
   - **Example:**
+  `...${variableName}...`
   - **Source:**
 - [ ] Can you give an example of a curry function and why this syntax offers an advantage?
   - **Explanation:**
@@ -686,34 +690,35 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
 
 ### Javascript General
 
-- [ ] Can you name two programming paradigms important for JavaScript app developers?
+- [B ] Can you name two programming paradigms important for JavaScript app developers?
   - **Explanation:**
+  functional programming and OOP?
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is functional programming?
+- [B ] What is functional programming?
   - **Explanation:**
     Programming to keep things DRY and SRP
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is the difference between classical inheritance and prototypal inheritance?
+- [B ] What is the difference between classical inheritance and prototypal inheritance?
   - **Explanation:**
     Prototypal is used in js because its a prototypal language everything will inherit from the prototype like built in methods. So found in class based languages
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What are the pros and cons of functional programming vs object-oriented programming?
+- [B ] What are the pros and cons of functional programming vs object-oriented programming?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What are two-way data binding and one-way data flow, and how are they different?
+- [B ] What are two-way data binding and one-way data flow, and how are they different?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is asynchronous programming, and why is it important in JavaScript?
+- [B ] What is asynchronous programming, and why is it important in JavaScript?
   - **Explanation:**
   - **Use:**
   - **Example:**
@@ -764,6 +769,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] Explain the role of REPL in Node.js.
   - **Explanation:**
+
   - **Use:**
   - **Example:**
   - **Source:**
@@ -862,64 +868,64 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
 
 ### CS Theory 
 
-- [ ] What is recursion and give an example using javascript?
+- [B ] What is recursion and give an example using javascript?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What are types?
+- [B ] What are types?
   - **Explanation:**
 
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What are data structures?
+- [B ] What are data structures?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is an algorithm?
+- [B ] What is an algorithm?
   - **Explanation:**
     A series of steps to achieve an end goal. Usally optimized to find the best path to the answer.
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is scope / lexical scope in javascript?
+- [B ] What is scope / lexical scope in javascript?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is polymorphism?
+- [B ] What is polymorphism?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is encapsulation?
+- [ B] What is encapsulation?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is a Linked List?
+- [B ] What is a Linked List?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is a Doubly Linked List?
+- [B ] What is a Doubly Linked List?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is a Queue?
+- [B ] What is a Queue?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is a Stack?
+- [B ] What is a Stack?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
-- [ ] What is a Hash Table?
+- [B ] What is a Hash Table?
   - **Explanation:**
   - **Use:**
   - **Example:**
