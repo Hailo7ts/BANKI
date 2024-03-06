@@ -258,6 +258,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What are the different ways to visually hide content (and make it available only for screen readers)?
   - **Explanation:**
+  In css you could use opacity 0 to visually hide it but still allows the screen reader to see it
   - **Use:**
   - **Example:**
   - **Source:**
@@ -360,6 +361,9 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?
   - **Explanation:**
+Building a web site to be responsive is when a website responds to the changing window sizes whereas mobile-first is where you start
+with the design for mobile and then adjust to growing viewport size.
+
   - **Use:**
   - **Example:**
   - **Source:**
@@ -398,7 +402,12 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What do you think of AMD vs CommonJS?
   - **Explanation:**
-  
+  Both are used to impllement a module system and commonjs is synchronous and AMD is asynchronys
+  CommonJs is going to be easier to work with comming form other languages. 
+
+  Ecmascript is the specification of how JS itself works - the engine - AMD & commonJS are ways/technologies to package/manage dependencies 
+
+
   - **Use:**
   - **Example:**
   - **Source:**
@@ -419,6 +428,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Can you describe the main difference between a `.forEach()` loop and a `.map()` loop and why you would pick one versus the other?
   - **Explanation:**
+  Both are array methods that itterate over an array. A map array will return a changed array and foreach will be used to view the array without manipulating it
   - **Use:**
   - **Example:**
   - **Source:**
@@ -832,6 +842,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] How will you debug an application in Node.js?
   - **Explanation:**
+  Using the debugger that is apart of my environment to insert a breakpoint to watch what values are being held and what 
+  returns are being given. Another option is using Chrome DevTools.
   - **Use:**
   - **Example:**
   - **Source:**
