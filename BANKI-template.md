@@ -192,9 +192,16 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] What is progressive rendering?
   - **Explanation:**
+ Progressive Rendering is when you render chunks of a webpage in the sever, starting with *critical* content, and stream that to the client in parts so they don't have to wait for a whole page to load.
   - **Use:**
+  The use of progressive rendering is to render *critical* content on server while streaming to client, so there is no wait and the page loads faster than client-side-rendering(CSR) and server-side-rendering(SSR). It's also benifitial to users on slower networks. Down-side is it won't be interactive until the page fully loads.
+
+  Used to load *critical* CSS in the head
   - **Example:**
+  An exampe of progressive rendering would be Amazon, rendering *critical* content on the server and stream it to the client without waiting after this the non-critical content is streamed to the client
   - **Source:**
+  https://medium.com/the-thinkmill/progressive-rendering-the-key-to-faster-web-ebfbbece41a4
+
 - [ ] Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
   - **Explanation:**
   - **Use:**
@@ -279,6 +286,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Can you give an example of an `@media` property other than screen?
   - **Explanation:**
+  print and all
   - **Use:**
   - **Example:**
   - **Source:**
@@ -599,11 +607,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] What are the pros and cons of using Promises instead of callbacks?
   - **Explanation:**
+  A situation where callbacks are nested within other callbacks potentially making it difficult to understand and maintin code. You can end up in *callback-hell* Using promises can be a solution to avoid this
   - **Use:**
   - **Example:**
   - **Source:**
 - [ ] What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
   - **Explanation:**
+  typescript locks in the data type so every variablle has a spcific type
+  and it can't be changed.
+
+  typescript is typically a little ahead of javascript... because they support transpiling backwards
   - **Use:**
   - **Example:**
   - **Source:**
@@ -644,6 +657,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] What are the differences between ES6 class and ES5 function constructors?
   - **Explanation:**
+  difference is syntactical sugar class constructors are easier
+  es5 look like standard function but first letter is capitalized and constructor would be seperate
+  es6
   - **Use:**
   - **Example:**
   - **Source:**
@@ -774,6 +790,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] How do you prevent/fix callback hell?
   - **Explanation:**
+  Using Promises or async/await
   - **Use:**
   - **Example:**
   - **Source:**
