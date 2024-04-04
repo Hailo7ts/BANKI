@@ -434,6 +434,8 @@ with the design for mobile and then adjust to growing viewport size.
   - **Use:**
   - **Example:**
   - **Source:**
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+  https://medium.com/womenintechnology/demystifying-closures-in-javascript-understanding-memory-allocation-and-lexical-scope-13f39db11dc0
 - [ ] Can you describe the main difference between a `.forEach()` loop and a `.map()` loop and why you would pick one versus the other?
   - **Explanation:**
   Both are array methods that itterate over an array. A map array will return a changed array and foreach will be used to view the array without manipulating it
