@@ -217,32 +217,65 @@ Most of the technical questions should have a three sentence response in the EUE
 
 - [ ] What is CSS selector specificity and how does it work?
   - **Explanation:**
-  The higher a CSS selector's specificity is determines which property value to apply to the element. The selector specificity is whats used to determine the most relevant declartion to a element.
+  CSS selector's specificity uses an algorithm that calculates the weight of a given selector to determine which property value to apply to the element.
   - **Use:**
   Used to determine what propety value is most relevant to apply to a element.
   - **Example:**
+  p {..} vs p.class{..} the second seclector weight would be calculated higher because its specificity is higher so the declarations in this would override any of the first selectors declarations
   - **Source:**
-- [ ] What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+- [ ] What's the difference between "resetting" and "normalizing" CSS? 
+Which would you choose, and why?
   - **Explanation:**
+  Resetting CSS is a set of styles that load before your other styles to remove built-in browser styles. 
+  Normalizing CSS provides cross-browser consistency in the default styling of HTML elements.
+
+  I would use Normalizing CSS because debugging is easier and it's modular (styling is divided into sections for ease)
   - **Use:**
+  The use of Resetting and Normalizing CSS is to make the default in browser to look more consistent across browsers
   - **Example:**
+  CSS Reset can force evey browser to have all its styles reset to null
+  CSS Normalize will preserve useful default styles rather than stripping all styles
   - **Source:**
+  https://www.geeksforgeeks.org/difference-between-resetting-and-normalizing-in-css/
+
+
 - [ ] Describe floats and how they work.
   - **Explanation:**
+  Float is a CSS property that removes an element from the normal flow and places an element on the left or right side of its container.
   - **Use:**
+  This could be used to allow text and inline elements to wrap around the floated element
   - **Example:**
+  float: left; on an image would remove an element from flow and place it in the top left of its container allowing text to wrap around the element.
   - **Source:**
+  https://developer.mozilla.org/en-US/docs/Web/CSS/float
+
+
 - [ ] Describe z-index and how stacking context is formed.
   - **Explanation:**
+  z-index is a CSS property that sets the order of positioned elements that overlap
+  overlapping elements with a larger z-index cover those with a smaller one
   - **Use:**
+  To overlap elements with a position value (except static) so that it appears closer to you
   - **Example:**
+  1{position: absolute; z-index:1;}  2{position:absolute; z-index: 2;}
+  2 would overlap 1
   - **Source:**
+  https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+
 - [ ] Describe BFC (Block Formatting Context) and how it works.
   - **Explanation:**
-    tool in css to manage layout stability helps direct how floats will interact in the page or using diplay: block;
+    BFC is a layout concept in CSS to determine the position and size of an element on a webpage
   - **Use:**
+  BFC addresses an issue of overlapping/unexpected layout behavior of elements due to HTML default styling
   - **Example:**
+  BFC would help contain internal floats and prevent elements from covering each other
   - **Source:**
+  https://www.geeksforgeeks.org/explain-the-working-of-the-block-formatting-context/#
+
+
 - [ ] What are the various clearing techniques and which is appropriate for what context?
   - **Explanation:**
   - **Use:**
@@ -302,6 +335,7 @@ Most of the technical questions should have a three sentence response in the EUE
   - **Source:**
 - [ ] Describe what you like and dislike about the CSS preprocessors you have used.
   - **Explanation:**
+  
   - **Use:**
   - **Example:**
   - **Source:**
@@ -696,9 +730,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] Can you give an example of a curry function and why this syntax offers an advantage?
   - **Explanation:**
+  transforms the function with multiple arguments into several functions with single arguments.
   - **Use:**
+  helps us write modular and reusable code
   - **Example:**
+  A funcgion with a large amount of parameters can be turned into a curry function which is the use of nested functions with single arguments.
   - **Source:**
+  https://www.geeksforgeeks.org/what-is-currying-function-in-javascript/#
 - [ ] What are the benefits of using spread syntax and how is it different from rest syntax?
   - **Explanation:**
   - **Use:**
