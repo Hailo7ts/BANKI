@@ -278,9 +278,15 @@ Which would you choose, and why?
 
 - [ ] What are the various clearing techniques and which is appropriate for what context?
   - **Explanation:**
+  clear is a CSS property that sets whether an element must be moved below(cleared) of floating elements that come before it.
   - **Use:**
+  clear determines which floated element can float beside it and which side it can float. Or if the cleared element uses both then it will be placed below the floats
   - **Example:**
+  clear: left; will stop floats from wrapping with the cleared element on its left side.
   - **Source:**
+  https://developer.mozilla.org/en-US/docs/Web/CSS/clear?retiredLocale=uk
+
+  
 - [ ] Explain CSS sprites, and how you would implement them on a page or site.
   - **Explanation:**
   - **Use:**
@@ -341,6 +347,7 @@ Which would you choose, and why?
   - **Source:**
 - [ ] How would you implement a web design comp that uses non-standard fonts?
   - **Explanation:**
+  Importing that font's src from the web into html and using css font family to set the font and have a backup font style
   - **Use:**
   - **Example:**
   - **Source:**
@@ -542,6 +549,7 @@ with the design for mobile and then adjust to growing viewport size.
   - **Source:**
 - [ ] Explain "hoisting".
   - **Explanation:**
+  when a var declaration looks like it's at the top of its scope
   - **Use:**
   - **Example:**
   - **Source:**
@@ -678,6 +686,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] What is event loop? What is the difference between call stack and task queue?
   - **Explanation:**
+  Event loop let's us run code asynchronously. 
   - **Use:**
   - **Example:**
   - **Source:**
@@ -711,6 +720,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] What is the definition of a higher-order function?
   - **Explanation:**
+  takes in a callback 
   - **Use:**
   - **Example:**
   - **Source:**
