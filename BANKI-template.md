@@ -289,83 +289,190 @@ Which would you choose, and why?
   
 - [ ] Explain CSS sprites, and how you would implement them on a page or site.
   - **Explanation:**
+  It's a technique of taking a handful of images and arranging them into one single image
   - **Use:**
+  The goal of using an image sprite is to cut down the number of HTTP requests made
   - **Example:**
+  Using an image sprite as a background on a span element and then changing the position of the image sprite using background-position property to show different images.
   - **Source:**
+  https://learn.shayhowe.com/advanced-html-css/performance-organization/
+
+
 - [ ] How would you approach fixing browser-specific styling issues?
   - **Explanation:**
+  I would approach fixing browser-specific styling issues by using Normalize
   - **Use:**
+  Because this makes sure default styles are consistent across different browsers, which can fix many common compatibility issues
   - **Example:**
   - **Source:**
+  https://medium.com/@lelianto.eko/how-to-solve-cross-browser-compatibility-issues-with-css-73a4f5083b9e
+
+
 - [ ] How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
   - **Explanation:**
+  I serve my pages for feature-constrained browsers by the process of building an application for modern browsers while maintaining its functionality in older browsers.
   - **Use:**
+  To do this I use feature queries that test if a browser supports a certain feature
   - **Example:**
+  /* `@supports` at-rule */
+  @supports (color: red) {
+   CSS rules to apply
+  }
+
+  /* `supports()` function */
+    @import `/css/styles.css` supports(color: red);
   - **Source:**
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries
+
+
 - [ ] What are the different ways to visually hide content (and make it available only for screen readers)?
   - **Explanation:**
-  In css you could use opacity 0 to visually hide it but still allows the screen reader to see it
+  Using semantically meaningful tags you can create a class like .sr-only to visually hide content meant only for screen readers by positioning the elements off the browser window
   - **Use:**
+  Enable better accessibility for users who rely on screen readers
   - **Example:**
+  .sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+  }
   - **Source:**
+  https://medium.com/web-accessibility-tips-tricks-and-techniques-for/web-accessibility-tip-visually-hidden-text-for-screen-readers-a52d954d9711
+
+
 - [ ] Have you ever used a grid system, and if so, what do you prefer?
   - **Explanation:**
+  CSS grid layout is great for dividing a page into major parts or defining relationships in size, position, and layer. I would prefer grids over Flexbox when dealing with larger-scale content
   - **Use:**
+  allows elements to be aligned into columns and rows
   - **Example:**
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
   - **Source:**
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+
+
+
+
 - [ ] Have you used or implemented media queries or mobile specific layouts/CSS?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
+
+
+
+
 - [ ] Are you familiar with styling SVG?
   - **Explanation:**
+  Yes I have used Scalable Vector Graphics mostly using properties shared between SVG and CSS like font, text, color, and visibility properties.
   - **Use:**
+  To manipulate the display of the vector image or the positioning
   - **Example:**
+  circle {
+  fill: red;
+  }
   - **Source:**
+  https://css-tricks.com/svg-properties-and-css/
+
+
 - [ ] Can you give an example of an `@media` property other than screen?
   - **Explanation:**
-  print and all
+  Another property of '@media' is print
   - **Use:**
+  This is intended for paged material viewed on a screen in print preview mode.
   - **Example:**
+  <link rel="stylesheet" media="print" href="print.css">
+  @mediaprint(media feature)and(media feature)
+  at-rule: media-type: media-feature: operator: mediafeature
   - **Source:**
+  https://css-tricks.com/a-complete-guide-to-css-media-queries/
+
+
 - [ ] What are some of the "gotchas" for writing efficient CSS?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] What are the advantages/disadvantages of using CSS preprocessors?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] Describe what you like and dislike about the CSS preprocessors you have used.
   - **Explanation:**
   
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] How would you implement a web design comp that uses non-standard fonts?
   - **Explanation:**
   Importing that font's src from the web into html and using css font family to set the font and have a backup font style
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] Explain how a browser determines what elements match a CSS selector.
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] Describe pseudo-elements and discuss what they are used for.
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] Explain your understanding of the box model and how you would tell the browser, through CSS, to render your layout in different box models.
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] What does `* { box-sizing: border-box; }` do? What are its advantages?
   - **Explanation:**
   CSS box-sizing property allows us to include the padding and boder in an element's total width and height.
@@ -378,16 +485,23 @@ Which would you choose, and why?
   }
   - **Source:**
   https://www.freecodecamp.org/news/what-is-box-sizing-border-box-css/
-- [ ] What is the CSS `display` property and can you give a few examples of its use?
+
+
+- [ ] What is the CSS `display` property and can you give a few examples 
+of its use?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] What's the difference between `inline` and `inline-block`?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] What's the difference between a `relative`, `fixed`, `absolute` and `static` positioned element?
   - **Explanation:**
   (sticky)--
@@ -398,11 +512,15 @@ Which would you choose, and why?
   - **Use:**
   - **Example:**
   - **Source:**
+
+
 - [ ] What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
   - **Explanation:**
   - **Use:**
   - **Example:**
   - **Source:**
+
+  
 - [ ] Have you played around with the new CSS Flexbox or Grid specs?
   - **Explanation:**
   - **Use:**
@@ -446,6 +564,7 @@ with the design for mobile and then adjust to growing viewport size.
   - **Source:**
 - [ ] Explain how prototypal inheritance works
   - **Explanation:**
+  In Prototype Inheritance, an object uses the properties or methods of another object via the Prototype Inheritance
   - **Use:**
   - **Example:**
   - **Source:**
@@ -472,9 +591,25 @@ with the design for mobile and then adjust to growing viewport size.
   - **Source:**
 - [ ] What is a closure, and how/why would you use one?
   - **Explanation:**
+  The feature of being able to reference a specific instance of a local binding iin an enclosing scope and a function that references bindings from local scopes around it is called closure
   - **Use:**
+  This behavior limits concerns of bindings, but also makes it possible to use function values in some creative ways
   - **Example:**
+  function multiplier(factor) {
+  return number => number * factor;
+}
+
+  let twice = multiplier(2);
+  console.log(twice(5));
+  // → 10
+
+  Thinking about programs like this takes some practice. A good mental  model is to think of function values as containing both the code in  their body and the environment in which they are created. When called,   the function body sees the environment in which it was created, not the   environment in which it is called.
+
+  In the example, multiplier is called and creates an environment in which  its factor parameter is bound to 2. The function value it returns, which   is stored in twice, remembers this environment. So when that is called,   it multiplies its argument by 2.
   - **Source:**
+  https://eloquentjavascript.net/3rd_edition/03_functions.html
+
+
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
   https://medium.com/womenintechnology/demystifying-closures-in-javascript-understanding-memory-allocation-and-lexical-scope-13f39db11dc0
 - [ ] Can you describe the main difference between a `.forEach()` loop and a `.map()` loop and why you would pick one versus the other?
@@ -501,6 +636,9 @@ with the design for mobile and then adjust to growing viewport size.
   - **Source:**
 - [ ] What is the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
   - **Explanation:**
+function Person(){} is a function declaration for creating a constructor function.
+var person = Person(); invokes the function immediately, assigning its return value (if any) to person.
+var person = new Person(); creates a new instance of Person using the new keyword.
   - **Use:**
   - **Example:**
   - **Source:**
@@ -863,7 +1001,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] What is the difference between Node.js and Ajax?
   - **Explanation:**
+  Completely different things 
+  Node works on server side and Ajax works on client side to make asynch calls 
   - **Use:**
+  
   - **Example:**
   - **Source:**
 - [ ] What are “streams” in Node.js? Explain the different types of streams present in Node.js.
@@ -949,9 +1090,24 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
 
 - [B ] What is recursion and give an example using javascript?
   - **Explanation:**
+  Recursion is when a function calls itself
   - **Use:**
+  Recursion can be used instead of a looping variant which describes the concept more clearly. There is a downside however, in JS it's about 3 times slower than the looping version which is generally cheaper than calling a function multiple times.
   - **Example:**
+  function power(base, exponent) {
+    if (exponent == 0) {
+      return 1;
+    } else {
+      return base * power(base, exponent - 1);
+    }
+  }
+
+  console.log(power(2, 3));
+  // → 8
   - **Source:**
+  https://eloquentjavascript.net/3rd_edition/03_functions.html#c_WGJ7JdCP7T
+
+
 - [B ] What are types?
   - **Explanation:**
 
@@ -1049,6 +1205,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Cond
   - **Source:**
 - [ ] Demonstrate Bubble Sort and explain when you might use it?
   - **Explanation:**
+
   - **Use:**
   - **Example:**
   - **Source:**
